@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html >
+    <head>
+        <title> Contact </title>
+        <link rel="stylesheet" href="./CSS/main.css">
+        <link rel="icon" type="image/x-icon" href="./media/logo.png">
+
+    </head>
+    <body>
+        <div class="page">
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="dbtn" href="home.html">Home</a>
+                    </li>
+                    <li>
+
+                        <button onclick="myFunction()" class="dbtn">Gallery</button>
+                         <div id="myDropdown" class="dropdown-content">
+                            <a href="vocanoLake.html">Vocano Lake</a>
+                            <a href="providence.html">Providence</a>
+                            <a href="niagaraFalls.html">Niagara Falls</a>
+                            <a href="austin.html">Austin</a>
+                            <a href="houston.html">Houston</a>
+
+
+                </div>
+                <script  src="button.js"></script>
+                    
+                    </li>
+                    
+                  
+                    
+                    <li>
+                        <a  href="resume.html" class="dbtn">Resume</a>
+                    </li>
+                    <li>
+                        <a  href="gaming.html" class="dbtn">Gaming</a>
+                    </li>
+                    <li>
+                        <a  href="contact.html" class="dbtn">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Send me a  message</h1>
+        <section id = "contactArticle">
+            <form name = "contactForm" id = "contactForm" action="https://formspree.io/f/xleyqkov" method = "post">
+              <fieldset>
+              <div>
+              <label for="firstName">First Name:</label>
+               <input type="text" id = "firstName" name = "firstName"  minlength = "2" pattern = "^[a-zA-Z]+$" required><br>
+            </div> 
+            <div>
+               <label for="lastName">Last Name:</label>
+               <input type="text" id = "lastName" name = "lastName"  minlength = "2" pattern = "^[a-zA-Z]+$" required><br>
+            </div>
+        </fieldset>
+        <fieldset>
+            <div>
+               <label for="email">Email:</label>
+               <input type = "text" id = "email" name = "email" > <br>
+            </div>
+        </fieldset>
+        <fieldset>
+               <label for= "message">Message: </label>
+               <div >
+                <textarea id = "message" name = "message" rows="8" wrap="soft"></textarea> <br>
+            </div>
+               <input id="smtbtn" type = "submit" name = "submitButton" value = "Submit">
+            </fieldset>
+           </form>
+           <!-- <span>Live form, pls dont spam, ty</span> -->
+       </section>
+    </div>
+<footer>&copy; 2023 Binyang Liu</footer>
+    </body>
+</html>

@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./media/logo.png">
+
+        <title> Gaming </title>
+        <link rel="stylesheet" href="./CSS/main.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.7.15/vue.min.js" 
+    integrity="sha512-2hINX01gn7TwWmZNKvrt+ZiHjOW2l7+gCaghPVL6Ge4kTTA7S35Q3zqJmCpKWMLvV5ih4fawBiNW+0WhIbEELg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    <body>
+        <div class="page">
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="dbtn"  href="home.html">Home</a>
+                    </li>
+                    <li>
+
+                        <button onclick="myFunction()" class="dbtn">Gallery</button>
+                         <div id="myDropdown" class="dropdown-content">
+                            <a href="vocanoLake.html">Vocano Lake</a>
+                            <a href="providence.html">Providence</a>
+                            <a href="niagaraFalls.html">Niagara Falls</a>
+                            <a href="austin.html">Austin</a>
+                            <a href="houston.html">Houston</a>
+
+
+                </div>
+                <script  src="button.js"></script>
+                    
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a  href="resume.html" class="dbtn">Resume</a>
+                    </li>
+                    <li>
+                        <a  href="gaming.html" class="dbtn">Gaming</a>
+                    </li>
+                    <li>
+                        <a  href="contact.html" class="dbtn">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <h1 class="logoText">Gaming</h1>
+        <p>hover over game icons below to reveal Steam Store widget(expect small delay)</p>
+        <script src="vue.js" defer></script> 
+
+       <table>
+        <tr>
+            <td>
+                <p>Icon/Steam Store Link</p>
+            </td>
+            <td>
+                <p>Game</p>
+            </td>
+            <td>
+                <p>Genre</p>
+            </td>
+            <td>
+                <p>Total Playtime</p>
+            </td>
+        </tr>
+<tr>
+    <td style="width: 646px">
+        <!-- <img  src="./media/eu4.jpg" class="gLogo"> -->
+       <!--  <iframe id="app" v-for="image in  images" :key="image.id" @mouseover="image.src = image.alt" @mouseleave="image.src = image.src2"   :src="image.src"  >  -->
+        <div id="app1" style="width: 646px; overflow-x:hidden;">
+            <iframe   :key="image1.id"   :src="image1.src"
+            frameborder="0" width="646" height="250"
+            @mouseover="image1.src = image1.alt"
+            @mouseout="image1.src = image1.src2"     ></iframe>
+        </div>
+    </td>
+    <td>Europa Universalis 4</td>
+    <td>Grand Strategy</td>
+    <td>4385hrs</td>
+
+</tr>
+<tr>
+    <td>
+        <div id="app2" style="width: 646px; overflow-x:hidden;">
+            <iframe   :key="image2.id"   :src="image2.src"
+            frameborder="0" width="646" height="250"
+            @mouseover="image2.src = image2.alt"
+            @mouseout="image2.src = image2.src2"     ></iframe>
+        </div>
+    </td>
+    <td>Stellaris</td>
+    <td>Grand Strategy</td>
+    <td>444hrs</td>
+</tr>
+<tr>
+    <td>
+        <div id="app3" style="width: 646px; overflow-x:hidden;">
+            <iframe   :key="image3.id"   :src="image3.src"
+            frameborder="0" width="646" height="250"
+            @mouseover="image3.src = image3.alt"
+            @mouseout="image3.src = image3.src2"     ></iframe>
+        </div>
+    </td>
+    <td>PUBG</td>
+    <td>Battle Royal</td>
+    <td>4385hr</td>
+</tr>
+<tr>
+    <td>
+        <div id="app4" style="width: 646px; overflow-x:hidden;">
+            <iframe   :key="image4.id"   :src="image4.src"
+            frameborder="0" width="646" height="250"
+            @mouseover="image4.src = image4.alt"
+            @mouseout="image4.src = image4.src2"     ></iframe>
+        </div>
+    </td>
+    <td>Baldur's Gate 3</td>
+    <td>RPG</td>
+    <td>392hrs</td>
+</tr>
+<tr>
+    <td>
+        <div id="app5" style="width: 646px; overflow-x:hidden;">
+            <iframe   :key="image5.id"   :src="image5.src"
+            frameborder="0" width="646" height="250"
+            @mouseover="image5.src = image5.alt"
+            @mouseout="image5.src = image5.src2"     ></iframe>
+        </div>
+    </td>
+    <td>Victoria 3</td>
+    <td>Grand Strategy</td>
+    <td>420hr</td>
+</tr>
+
+       </table>
+    </div>
+<footer>&copy; 2023 Binyang Liu</footer>
+    </body>
+
+</html>
